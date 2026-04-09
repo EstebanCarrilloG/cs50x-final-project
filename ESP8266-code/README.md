@@ -1,4 +1,4 @@
-# Device Firmware (conection-test)
+# Device Firmware (ESP8266-code)
 
 ESP8266 firmware project built with PlatformIO. The device manages three switch channels, publishes temperature telemetry, and synchronizes state through MQTT using JSON payloads.
 
@@ -24,7 +24,7 @@ ESP8266 firmware project built with PlatformIO. The device manages three switch 
 ## Project Structure
 
 ```text
-conection-test/
+ESP8266-code/
   platformio.ini
   src/
     main.cpp
@@ -108,7 +108,7 @@ Important:
 
 ## Build, Upload, and Monitor
 
-From the project root (conection-test):
+From the project root (ESP8266-code):
 
 ```bash
 platformio run

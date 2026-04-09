@@ -30,17 +30,16 @@ This README reflects the combined result of two major updates:
 ```text
 cs50x-final-project/
   README.md
-  device/
-    conection-test/
-      platformio.ini
-      src/
-        main.cpp
-        device_app.h
-        device_app.cpp
-        switch_controller.h
-        switch_controller.cpp
-        config.h
-        example.config.h
+  ESP8266-code/
+    platformio.ini
+    src/
+      main.cpp
+      device_app.h
+      device_app.cpp
+      switch_controller.h
+      switch_controller.cpp
+      config.h
+      example.config.h
   mosquitto/
     mosquitto.conf
   web/
@@ -107,14 +106,14 @@ mosquitto -c ".\\mosquitto\\mosquitto.conf" -v
 
 2. Configure and flash firmware:
 
-- Open `device/conection-test/src/config.h`
+- Open `ESP8266-code/src/config.h`
 - Set WiFi credentials, broker host, and topics
-- Use `device/conection-test/src/example.config.h` as template
+- Use `ESP8266-code/src/example.config.h` as template
 
 Then run:
 
 ```bash
-cd device/conection-test
+cd ESP8266-code
 platformio run --target upload
 platformio device monitor --baud 115200
 ```
@@ -150,7 +149,7 @@ pnpm start
 Firmware:
 
 ```bash
-cd device/conection-test
+cd ESP8266-code
 platformio run
 platformio run --target upload
 platformio device monitor --baud 115200
